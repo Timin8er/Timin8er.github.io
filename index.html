@@ -13,7 +13,7 @@ layout: default
 } */
 h1 {
   font-size: 125px;
-  padding: 60px 0 30px 0;
+  padding: 30px 0 0 0;
   margin: -30px 0 0 0;
   font-family: 'LinotypeDidot', serif;
   letter-spacing: -.08em;
@@ -22,7 +22,10 @@ h1 {
     height: 75vh;
 }
 .part-screen {
-  height:60vh
+  height:60vh;
+}
+.snap-bot {
+  vertical-align: bottom;
 }
 #INTRO {
   background-size: cover;
@@ -38,6 +41,10 @@ h1 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url(/images/vex_group_shot_greyscale.jpg);
+  text-shadow : -1px -1px 0 #fff, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#VEXLOGO {
+  background-image: url(/images/Vex-Logo.jpg);
 }
 #RSGS {
   background-size: cover;
@@ -52,20 +59,20 @@ h1 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url(/images/cards.png);
-  color: white;
+  color: black;
 }
 </style>
 <body>
   <div id="INTRO" class="jumbotron text-center full-screen">
     <h1>Tim Polnow</h1>
-    <h3>Software Developer</h3>
+    <h3>Software Engineer</h3>
   </div>
   <div id="RSGS" class="container-fluid part-screen">
     <div class="row">
-        <div class="col-sm-offset-1 col-sm-8">
-            <h2>RSGS</h2>
-            <h3>Robotic Servicing of Geosynchronous Satellites</h3>
-        </div>
+      <div class="col-sm-offset-1 col-sm-8">
+        <h2>RSGS</h2>
+        <h3>Robotic Servicing of Geosynchronous Satellites</h3>
+      </div>
     </div>
   </div>
   <div id="Blackjack" class="container-fluid part-screen text-center">
@@ -73,11 +80,13 @@ h1 {
     <p>A project to train a Nural Network to play blackjack.</p>
   </div>
   <div id="VEX" class="container-fluid part-screen text-center">
-    <div class="row">
-        <div class="col-sm-offset-1 col-sm-8">
-            <h2>Vex Robotics Team</h2>
-            <h3>Robotic Servicing of Geosynchronous Satellites</h3>
-        </div>
+    <div class="row snap-bot">
+      <div id="VEXLOGO">
+      </div>
+      <div class="col-sm-offset-1 col-sm-8">
+        <h2>Vex Robotics Team</h2>
+        <h3>Robotic Servicing of Geosynchronous Satellites</h3>
+      </div>
     </div>
   </div>
 </body>
