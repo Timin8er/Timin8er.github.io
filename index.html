@@ -25,16 +25,15 @@
     :root {
       --main-light:#D7D9CE;
       --main-dark:#040404;
-      --color:#0C7489;
-      --color-light:#119DA4;
-      --color-dark:#13505B;
+      --color:#fff7a3;
+      --color-light:#fff7a3;
+      --color-dark:#062103;
     }
-
 
     body {
       Font-Family: 'Lora', Serif;
-      color: var(--main-light);
-      text-shadow : -1px -1px 0 var(--main-dark), 1px -1px 0 var(--main-dark), -1px 1px 0 var(--main-dark), 1px 1px 0 #var(--main-dark);
+      color: var(--color);
+      text-shadow: -2px 0px var(--color-dark); 0px 2px var(--color-dark); 2px 0px var(--color-dark); 0px -2px var(--color-dark);
     }
 
     <!-- a {
@@ -45,22 +44,27 @@
       border-radius: 10px;
       border-style: solid;
       border-color: var(--color-dark);
+      border-width: 8px;
       background-color: var(--main-dark);
     }
 
     .profile_image {
       border-radius: 50px;
       border-style: solid;
+      border-width: 4px;
       border-color: var(--color-dark);
     }
 
     #INTRO {
       background-color: var(--main-dark);
+      border-style: solid;
+      border-width: 8px;
+      border-color: var(--color-dark);
     }
 
     #RSGS {
       background-size: cover;
-      background-position: center;
+      background-position: 50% 42%;
       background-repeat: no-repeat;
       background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa);
     }
@@ -96,12 +100,17 @@
         <div class="col-4 text-center">
             <h1 class="display-1">Tim Polnow</h1>
             <h1 class="display-3">Software Engineer</h1>
+
+            <div class="row">
+              <div class="col-2 offset-4">
+                <h1 class="display-5"><a type="button" class="btn btn-outline-primary" href="/resume.pdf">Resume</a></h1>
+              </div>
+              <div class="col-2">
+                <h1 class="display-5"><a type="button" class="btn btn-outline-primary" href="mailto: timt.polnowj@gmail.com">Contact</a></h1>
+              </div>
+            </div>
         </div>
 
-        <div class="col-4 text-center">
-          <h1 class="display-5 pt-5"><a type="button" class="btn btn-outline-primary" href="/resume.pdf">Resume</a></h1>
-          <h1 class="display-5 pb-5"><a type="button" class="btn btn-outline-primary" href="mailto: timt.polnowj@gmail.com">Contact</a></h1>
-        </div>
       </div>
 
       <!-- RSGS Project Card -->
