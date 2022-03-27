@@ -1,4 +1,14 @@
 <!doctype html>
+
+
+<!--
+  White: D7D9CE
+  Dark: 040404
+  Color light 119DA4
+  Color 0C7489
+  Color Dark 13505B
+ -->
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -12,39 +22,40 @@
   </head>
 
   <style>
+    :root {
+      --main-light:#D7D9CE;
+      --main-dark:#040404;
+      --color:#0C7489;
+      --color-light:#119DA4;
+      --color-dark:#13505B;
+    }
+
+
     body {
       Font-Family: 'Lora', Serif;
+      color: var(--main-light);
+      text-shadow : -1px -1px 0 var(--main-dark), 1px -1px 0 var(--main-dark), -1px 1px 0 var(--main-dark), 1px 1px 0 #var(--main-dark);
     }
 
-    .snap-bot {
-      vertical-align: bottom;
+    <!-- a {
+      color: var(--color);
+    } -->
+
+    .project_card {
+      border-radius: 10px;
+      border-style: solid;
+      border-color: var(--color-dark);
+      background-color: var(--main-dark);
     }
 
-    #profile_image {
-      max-width: 15%;
+    .profile_image {
+      border-radius: 50px;
+      border-style: solid;
+      border-color: var(--color-dark);
     }
 
     #INTRO {
-      background-size: cover;
-      background-position: top;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-image: url(https://images.unsplash.com/photo-1534777410147-084a460870fc);
-      color: white;
-    }
-
-    #VEX {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-image: url(/images/vex_group_shot_greyscale.jpg);
-      text-shadow : -1px -1px 0 #fff, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-      color: black;
-      height: 70vh;
-    }
-
-    #VEXLOGO {
-      background-image: url(/images/Vex-Logo.jpg);
+      background-color: var(--main-dark);
     }
 
     #RSGS {
@@ -52,20 +63,26 @@
       background-position: center;
       background-repeat: no-repeat;
       background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa);
-      color: white;
-      text-shadow : -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
     }
 
-    #Blackjack {
+    #COSMIC {
+    }
+
+    #BLACKJACK {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-image: url(/images/cards.png); */
-      color: white;
+    }
+
+    #VEX {
+    }
+
+    #VEXLOGO {
+      background-image: url(/images/Vex-Logo.jpg);
     }
   </style>
-
 
   <body>
     <div class="container-flex">
@@ -73,7 +90,7 @@
       <!-- Header -->
       <div class="row align-items-center p-3" id="INTRO" >
         <div class="col-2 offset-2">
-          <img src="https://drive.google.com/uc?export=download&id=1wASzez30pO4nMcvge6kvWWpmi8FrAgqH" class="figure-img img-fluid rounded">
+          <img src="https://drive.google.com/uc?export=download&id=1wASzez30pO4nMcvge6kvWWpmi8FrAgqH" class="figure-img img-fluid rounded profile_image">
         </div>
 
         <div class="col-4 text-center">
@@ -81,51 +98,63 @@
             <h1 class="display-3">Software Engineer</h1>
         </div>
 
-        <div id="INTRO" class="col-4 text-center">
-          <h1 class="display-5 pt-5"><a href="/blackjackbot.html">Resume</a></h1>
-          <h1 class="display-5 pb-5"><a href="/blackjackbot.html">Contact</a></h1>
+        <div class="col-4 text-center">
+          <h1 class="display-5 pt-5"><a type="button" class="btn btn-outline-primary" href="/resume.pdf">Resume</a></h1>
+          <h1 class="display-5 pb-5"><a type="button" class="btn btn-outline-primary" href="mailto: timt.polnowj@gmail.com">Contact</a></h1>
         </div>
       </div>
 
       <!-- RSGS Project Card -->
-      <div class="row text-center project_card m-3">
-        <div id="RSGS" class="col-10 offset-1">
+      <div class="row text-center m-3">
+        <div id="RSGS" class="project_card col-10 offset-1 p-2">
           <h1 class="display-3 pt-5"><a href="/rsgs.html">RSGS</a></h1>
           <h1 class="display-5 pb-5"><b>Robotic Servicing of Geosynchronous Satellites</b></h1>
         </div>
       </div>
 
       <!-- Cosmic KSP Project Card -->
-      <div class="row text-center project_card">
-        <div id="Cosmic KSP" class="col-10 offset-1">
-          <h1 class="display-3 pt-5"><a href="/blackjackbot.html">COSMIC KSP</a></h1>
-          <h1 class="display-5 pb-5">Control KSP using ground station software, COSMOS</h1>
+      <div class="row text-center m-3">
+        <div id="COSMIC" class="project_card col-10 offset-1">
+          <div class="row p-2">
+            <div class="col-2 offset-1 d-flex align-items-center">
+              <img class="figure-img img-fluid" src="https://cosmosc2.com/img/COSMOS.png">
+            </div>
+            <div class="col-6 text-center">
+              <h1 class="display-3 pt-5"><a href="/blackjackbot.html">COSMIC KSP</a></h1>
+              <h1 class="display-5 pb-5">Commanding KSP with COSMOS</h1>
+            </div>
+            <div class="col-2 d-flex align-items-center">
+              <img class="figure-img img-fluid" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png">
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Blackjack Bot Project Card -->
-      <div class="row text-center project_card">
-        <div id="Cosmic KSP" class="col-10 offset-1">
-          <h1 class="display-3 pt-5"><a href="/blackjackbot.html">Blackjack Bot</a></h1>
-          <h1 class="display-5 pb-5">Neural Networks Playing Blackjack.</h1>
-          <div class="row">
-            <div class="col">
-              <img src="/images/blackjackBotScreenshot_abridged.PNG" alt="Sim Abridged">
+      <div class="row text-center m-3">
+        <div id="BLACKJACK" class="project_card col-10 offset-1">
+          <div class="row p-2">
+            <div class="col-6 text-center offset-3">
+              <h1 class="display-3 pt-5"><a href="/blackjackbot.html">Blackjack Bot</a></h1>
+              <h1 class="display-5 pb-5">Neural Networks Playing Blackjack.</h1>
+            </div>
+            <div class="col-3 d-flex align-items-center">
+              <img class="figure-img img-fluid" src="/images/blackjackBotScreenshot_abridged.PNG" alt="Sim Abridged">
             </div>
           </div>
         </div>
       </div>
 
       <!-- VEX Project Card -->
-      <div class="row text-center project_card">
-        <div id="VEX" class="col-10 offset-1 h-100">
+      <div class="row text-center m-3">
+        <div id="VEX" class="project_card col-10 offset-1 h-100">
           <div class="row justify-content-md-center">
             <div class="col col-2">
               <img src="/images/Vex-Logo.jpg" alt="Logo" style="width:300px; height:200px; border: 2px solid black">
             </div>
             <div class="col-auto">
               <h2 class="display-3">Vex Robotics Team</h2>
-              <h3 class="display-5">Old Dominion University, 2017</h3>
+              <h3 class="display-5">Old Dominion University</h3>
             </div>
           </div>
         </div>
