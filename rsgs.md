@@ -1,5 +1,6 @@
 ---
 layout: ProjectPage
+title: RSGS
 ---
 
 # RSGS
