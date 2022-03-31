@@ -7,6 +7,10 @@ layout: page
     --main-boarder:#121212;
   }
 
+  body {
+    Font-Family: 'Lora', Serif;
+  }
+
   .project_card {
     border-radius: 10px;
     border-style: solid;
@@ -61,22 +65,13 @@ layout: page
     <div class="col-lg-4 text-center">
       <h1 class="display-1">Tim Polnow</h1>
       <h1 class="display-3">Software Engineer</h1>
-
-      <div class="row">
-        <div class="col-sm-2 offset-sm-4">
-          <h1 class="display-5"><a type="button" class="btn btn-outline-primary p-2" href="/content/Resume_2022_03_28.pdf">Resume</a></h1>
-        </div>
-        <div class="col-sm-2">
-          <h1 class="display-5"><a type="button" class="btn btn-outline-primary p-2" href="mailto: jobhunt@timin8er.com">Contact</a></h1>
-        </div>
-      </div>
     </div>
   </div>
 
   <!-- RSGS Project Card -->
   <div class="row text-center m-3">
     <div id="RSGS" class="project_card col-10 offset-1 p-2">
-      <h1 class="display-3 pt-5"><a href="https://rebrand.ly/r1ckr0l13r">RSGS</a></h1>
+      <h1 class="display-3 pt-5"><a href="/rsgs">RSGS</a></h1>
       <h2 class="pb-5"><b>Robotic Servicing of Geosynchronous Satellites</b></h2>
     </div>
   </div>
