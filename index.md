@@ -11,6 +11,10 @@ layout: page
     Font-Family: 'Lora', Serif;
   }
 
+  a {
+    color: #ffcc00;
+  }
+
   .project_card {
     border-radius: 10px;
     border-style: solid;
