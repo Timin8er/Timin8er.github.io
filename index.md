@@ -156,14 +156,13 @@ layout: page
 
   <!-- Footer -->
   <div class="row align-items-center p-3" id="INTRO" >
-    <div class="col-md-2 offset-sm-4 text-center">
-      <h1 class="display-5"><a type="button" class="btn btn-outline-primary p-2" href="/content/Resume_2022_03_28.pdf">Resume</a></h1>
-    </div>
-
-    <div class="col-md-2 text-center">
-      <h1 class="display-5"><a type="button" class="btn btn-outline-primary p-2" href="mailto: jobhunt@timin8er.com">Contact</a></h1>
-    </div>
-
+    <nav>
+      <ul>
+        <li class="fork"><a href="www.timin8er.com">Tim Polnow</a></li>
+        <li class="downloads"><a href="/content/Resume_2022_03_28.pdf">Resume</a></li>
+        <li class="downloads"><a href="mailto: jobhunt@timin8er.com">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 
 </div>
