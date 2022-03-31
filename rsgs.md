@@ -1,5 +1,5 @@
 ---
-layout: projecttemplate
+layout: projectpage
 title: RSGS
 ---
 
