@@ -3,19 +3,15 @@ layout: page
 ---
 <style>
   :root {
-    --main-light:#D7D9CE;
     --main-dark:#191919;
     --main-boarder:#121212;
-    --color:#fff7a3;
-    --color-light:#fff7a3;
-    --color-dark:#062103;
   }
 
   .project_card {
     border-radius: 10px;
     border-style: solid;
     border-color: var(--main-boarder);
-    border-width: 8px;
+    border-width: 4px;
     background-color: var(--main-dark);
   }
 
@@ -29,7 +25,7 @@ layout: page
   #INTRO {
     background-color: var(--main-dark);
     border-style: solid;
-    border-width: 8px;
+    border-width: 4px;
     border-color: var(--main-boarder);
   }
 
@@ -81,7 +77,7 @@ layout: page
   <div class="row text-center m-3">
     <div id="RSGS" class="project_card col-10 offset-1 p-2">
       <h1 class="display-3 pt-5"><a href="https://rebrand.ly/r1ckr0l13r">RSGS</a></h1>
-      <h2 class="pb-5"><b>Robotic Servicing of Geosynchronous Satellites</b></h1>
+      <h2 class="pb-5"><b>Robotic Servicing of Geosynchronous Satellites</b></h2>
     </div>
   </div>
 
