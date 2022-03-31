@@ -1,6 +1,60 @@
 ---
 layout: page
 ---
+<style>
+  :root {
+    --main-light:#D7D9CE;
+    --main-dark:#191919;
+    --main-boarder:#121212;
+    --color:#fff7a3;
+    --color-light:#fff7a3;
+    --color-dark:#062103;
+  }
+
+  .project_card {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--main-boarder);
+    border-width: 8px;
+    background-color: var(--main-dark);
+  }
+
+  .profile_image {
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--main-boarder);
+  }
+
+  #INTRO {
+    background-color: var(--main-dark);
+    border-style: solid;
+    border-width: 8px;
+    border-color: var(--main-boarder);
+  }
+
+  #RSGS {
+    background-size: cover;
+    background-position: 50% 42%;
+    background-repeat: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa);
+  }
+
+  #COSMIC {
+  }
+
+  #CARDSTRIP {
+    background-repeat: no-repeat;
+    background-position: 22% 100%;
+    background-attachment: fixed;
+    background-image: url(/content/images/cardStrip.png); */
+  }
+
+  #VEX {
+  }
+</style>
+
+
 <div class="container-flex">
   <div class="row align-items-center p-3" id="INTRO" >
     <div class="col-lg-3 offset-lg-1 d-flex justify-content-center justify-content-lg-end">
