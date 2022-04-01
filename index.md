@@ -86,16 +86,16 @@ layout: page
       <div class="row p-2">
 
         <div class="col-lg-2 offset-1 d-none d-lg-flex align-items-center">
-          <img class="figure-img img-fluid mx-auto" src="https://cosmosc2.com/img/COSMOS.png">
+          <a href="https://cosmosc2.com/"><img class="figure-img img-fluid mx-auto" src="https://cosmosc2.com/img/COSMOS.png"></a>
         </div>
 
         <div class="col-lg-6 text-center">
-          <h1 class="display-3 pt-5"><a href="https://rebrand.ly/r1ckr0l13r">COSMIC KSP</a></h1>
+          <h1 class="display-3 pt-5"><a href="/cosmic_ksp">COSMIC KSP</a></h1>
           <h2 class="pb-5"><b>Commanding KSP with COSMOS</b></h2>
         </div>
 
         <div class="col-lg-2 d-none d-lg-flex align-items-center">
-          <img class="figure-img img-fluid mx-auto" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png">
+          <a href="https://www.kerbalspaceprogram.com/"><img class="figure-img img-fluid mx-auto" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png"></a>
         </div>
 
         <div class="col-lg-6 d-flex d-lg-none">
