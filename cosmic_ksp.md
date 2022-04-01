@@ -19,28 +19,28 @@ A project to command the video game **[Kerbal Space Program](https://www.kerbals
 - Create a mission planning app for verifying commands in simulation prior to execution
 
 ## **Communication**
-KPS does not support external commanding or telemetry out of the box. To address this I use two mods provided by the KSP fan community to enable this.
+KPS does not support external commanding or telemetry out of the box. To address this I use two mods provided by the KSP fan community.
 
-### [KOS](https://ksp-kos.github.io/KOS/)
-The Kerbal Operating System, KOS, mod enables running scripts 'onboard' the spacecraft from either a built in terminal or remotely from a Telnet connection.
+### **KOS**
+The [Kerbal Operating System](https://ksp-kos.github.io/KOS/), KOS, mod enables running scripts "onboard" the spacecraft from either a built in terminal or remotely from a Telnet connection.
 The ability to run scripts also enables more complicated automated behavior than what can be sent in a single command. Such as:
 - automated abort conditions
 - PID control loops
-- repeatable maneuvers
+- precise maneuvers
 - modular behaviors
 
-### [Telemachus](https://github.com/TeleIO/Telemachus-1)
-The Telemachus mod provides a easy to use telemetry stream from KSP to a standard computer socket.
+### **Telemachus**
+The [Telemachus](https://github.com/TeleIO/Telemachus-1) mod provides a easy to use telemetry stream from KSP to a standard computer socket.
 The telemetry covers almost everything players would want to know about the state of the spacecraft. Including:
 - Position, Rotation and Orbit parameters
 - Resource levels
 - environment status
 
 ## **Relays**
-While the above mods add a lot of needed interfaces, they are not directly compatible with cosmos and need a translation layer.
+While the above mods add a lot of needed interfaces, they are not directly compatible with Cosmos and need a translation layer.
 
 On the Telemetry side, Cosmos accepts fixed width strings to decode into data while Telemachus sends json formatted text.
-So a relay, written in Python, subscribes to the Telemachus stream, reformats the data into the format Cosmos needs, then sends in to a different socket for Cosmos to receive.
+So a relay, written in Python, subscribes to the Telemachus stream, reformats the data into the format Cosmos needs, then sends it to a different socket for Cosmos to receive.
 
 On the commanding side, we have the same formatting problem but also KOS can only be commanded via telnet. So the commanding relay subscribes to the socket for Cosmos commands, reformats the commands and sends them to KSP via telnet.
 
