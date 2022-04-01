@@ -47,23 +47,21 @@ On the commanding side, we have the same formatting problem but also KOS can onl
 These two relays form the translation layer between Cosmos and KSP. They also include several injection points for testing and screening data flow.
 
 ## **Simulation**
-An important function of any ground station is the screening and simulation functions, important for verification. In this case the simulation is just a second instance of KSP, set up to be initialized quickly from the state of the real instance.
+This ground station supports screening and simulation functions, used for verification and planning. The simulation is just a second instance of KSP, set up to be initialized quickly from the states of the real KSP instance.
 
-This is done through save file manipulation. A quick-save file acts as a 'snapshot' of the game state and is copied onto the simulation game state reloaded be hijacking the KSP load file.
-
-The simulation is commanded directly through the SMA or MPA.
+Initialization is done through save file manipulation. A quick-save file acts as a snapshot of the real KPS instance state and is copied onto the simulation KSP state and reloaded.
 
 ## **Simulation Manager App**
-The Simulation Manager App, SMA, is the app that manages the simulation state and can send commands to it. It can initialize the sim from the real, and send commands to the sim using the cosmos format.
+The Simulation Manager App, **SMA**, is the application that manages the simulation state and can send commands to it. It can initialize the sim from the real, and send commands to the sim using the cosmos format.
 
 The SMA is used during the real missions to screen commands prior to commanding the real spacecraft. This serves as a final check to make sure the command will function as expected.
 
 #### Features:
-- Manage the initialization of the *sim* from the *real* instance.
+- Manage the initialization of the *sim* from the *real* instance data.
 - Directly command the *sim* instance
 
 ## **Mission Planning App**
-The Mission Planning App, MPA, is an app to construct sequences of commands and validate them using the simulation game instance. It does everything the SMA can do plus the function for creating mission commands.
+The Mission Planning App, **MPA**, is an app to construct sequences of commands and validate them using the simulation game instance. It creates a savable mission plan that can be
 
 #### Features:
 - Construct a list of commands in order of execution
