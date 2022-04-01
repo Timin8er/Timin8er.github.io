@@ -7,9 +7,19 @@ title: Cosmic KSP
 
 ## **[Git](https://github.com/Timin8er/KOS-Commander)**
 
-![Image](https://cosmosc2.com/img/COSMOS.png)![Image](https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png)
+<div class="row p-2">
 
-### Overview
+  <div class="col d-flex align-items-center">
+    <img class="figure-img img-fluid mx-auto w-75" src="https://cosmosc2.com/img/COSMOS.png">
+  </div>
+
+  <div class="col d-flex align-items-center ">
+    <img class="figure-img img-fluid mx-auto h-75" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png">
+  </div>
+
+</div>
+
+## **Overview**
 A project to command the video game **[Kerbal Space Program](https://www.kerbalspaceprogram.com/)** using real ground station software, **[Cosmos](https://cosmosc2.com/)**.
 
 ### Project Goals
