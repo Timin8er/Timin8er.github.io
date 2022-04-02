@@ -7,10 +7,6 @@ layout: page
     --main-boarder:#121212;
   }
 
-  body {
-    Font-Family: 'Lora', Serif;
-  }
-
   a {
     color: #ffcc00;
   }

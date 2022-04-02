@@ -1,5 +1,5 @@
 ---
-layout: gitprojectpage
+layout: projectpage
 title: Cosmic KSP
 ---
 
