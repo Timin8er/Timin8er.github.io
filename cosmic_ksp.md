@@ -1,9 +1,9 @@
 ---
-layout: projectpage
+layout: gitprojectpage
 title: Cosmic KSP
 ---
 
-# Cosmic KSP
+# **Cosmic KSP**
 
 ## **[View on GitHub](https://github.com/Timin8er/KOS-Commander)**
 
