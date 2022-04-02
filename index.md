@@ -70,7 +70,7 @@ layout: page
 
   <!-- RSGS Project Card -->
   <div class="row text-center m-3">
-    <div id="RSGS" class="project_card col-10 offset-1 p-2">
+    <div id="RSGS" class="project_card col-md-10 offset-md-1">
       <h1 class="display-3 pt-5"><a href="/rsgs">RSGS</a></h1>
       <h2 class="pb-5"><b>Robotic Servicing of Geosynchronous Satellites</b></h2>
     </div>
@@ -78,7 +78,7 @@ layout: page
 
   <!-- Cosmic KSP Project Card -->
   <div class="row text-center m-3">
-    <div id="COSMIC" class="project_card col-10 offset-1">
+    <div id="COSMIC" class="project_card col-md-10 offset-md-1">
       <div class="row p-2">
 
         <div class="col-lg-2 offset-1 d-none d-lg-flex align-items-center">
@@ -114,7 +114,7 @@ layout: page
 
   <!-- Blackjack Bot Project Card -->
   <div class="row text-center m-3">
-    <div class="project_card col-10 offset-1">
+    <div class="project_card col-md-10 offset-md-1">
       <div class="row p-2">
 
         <div id="CARDSTRIP" class="col-2 offset-1 d-none d-md-flex align-items-center">
@@ -133,7 +133,7 @@ layout: page
 
   <!-- VEX Project Card -->
   <div class="row text-center m-3">
-    <div id="VEX" class="project_card col-10 offset-1 h-100">
+    <div id="VEX" class="project_card col-md-10 offset-md-1 h-100">
       <div class="row p-2">
 
         <div class="col-lg-2 offset-lg-1 d-flex align-items-center">
@@ -151,18 +151,6 @@ layout: page
 
       </div>
     </div>
-  </div>
-
-
-  <!-- Footer -->
-  <div class="row align-items-center p-3" id="INTRO" >
-    <nav>
-      <ul>
-        <li class="fork"><a href="www.timin8er.com">Tim Polnow</a></li>
-        <li class="downloads"><a href="/content/Resume_2022_03_28.pdf">Resume</a></li>
-        <li class="downloads"><a href="mailto: jobhunt@timin8er.com">Contact</a></li>
-      </ul>
-    </nav>
   </div>
 
 </div>
