@@ -12,6 +12,9 @@ section {
   max-width: 100%;
 }
 
+#header nav {
+  max-width: 900px;
+
 #footer {
   z-index: 100;
   left: 0;
@@ -24,11 +27,11 @@ section {
 }
 
 #footer nav {
-  max-width: 650px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 10px;
   background: blue;
-  margin: 6px auto;
+  margin: 0px auto;
 }
 
 #footer nav ul {
