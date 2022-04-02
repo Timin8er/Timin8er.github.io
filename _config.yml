@@ -5,3 +5,5 @@ baseurl: ""
 url: "https://timin8er.github.io"
 title: Timin8er.com
 description: Tim Polnow's Profolio
+
+theme: jekyll-theme-midnight
