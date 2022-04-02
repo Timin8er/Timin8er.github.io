@@ -5,7 +5,7 @@ title: Cosmic KSP
 
 # Cosmic KSP
 
-## **[Git](https://github.com/Timin8er/KOS-Commander)**
+## **[View on GitHub](https://github.com/Timin8er/KOS-Commander)**
 
 <div class="row p-1 my-3" style="border-radius: 10px; border-style: solid; border-color: #121212; border-width: 4px; background-color: #191919;">
 
