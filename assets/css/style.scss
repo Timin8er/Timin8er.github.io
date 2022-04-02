@@ -38,3 +38,24 @@ section {
   display: inline-block;
   text-align: center;
 }
+
+#footer nav ul li.fork {
+  float: left;
+  margin-left: 0px;
+}
+
+#footer nav ul li.downloads {
+  float: right;
+  margin-left: 6px;
+}
+
+#footer nav ul li {
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  list-style: none;
+  display: inline;
+  color: white;
+  line-height: 50px;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
