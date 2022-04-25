@@ -28,6 +28,12 @@ A project to command the video game **[Kerbal Space Program](https://www.kerbals
 - Initialize a *simulation* instance of KSP and screen commands before sending them to the *real* instance
 - Create a mission planning app for verifying commands in simulation prior to execution
 
+<div class="row p-1 my-3" style="border-radius: 10px; border-style: solid; border-color: #121212; border-width: 4px; background-color: #191919;">
+  <div class="col d-flex align-items-center">
+    <img class="figure-img img-fluid mx-auto w-75" src="/content/images/CosmicKspDataFlow.png">
+  </div>
+</div>
+
 ## **Communication**
 KPS does not support external commanding or telemetry out of the box. To address this I use two mods provided by the KSP fan community.
 
