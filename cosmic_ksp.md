@@ -34,7 +34,7 @@ A project to command the video game **[Kerbal Space Program](https://www.kerbals
   </div>
 </div>
 
----
+___
 
 ## **Game Instance Communication**
 KPS does not support external commanding or telemetry out of the box. To add this I use two mods provided by the KSP fan community.
@@ -68,7 +68,7 @@ These two relay threads form the translation layer between COSMOS and KSP. They 
 [COSMOS](https://cosmosc2.com/) by Ball Aerospace is a command and control system providing commanding, scripting, and data visualization capabilities for embedded systems. COSMOS is intended for use during all phases of testing and during operations.
 COSMOS 5 is a cloud native build and comes in the form of a docker container. For this reason, COSMOS is actually running on a separate server machine I own, and is interfaced with over a browser.
 
----
+___
 
 ## **Wrokflow and Instance Configurations**
 <div class="row p-1 my-3" style="border-radius: 10px; border-style: solid; border-color: #121212; border-width: 4px; background-color: #191919;">
