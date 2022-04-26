@@ -30,56 +30,56 @@ A project to command the video game **[Kerbal Space Program](https://www.kerbals
 
 <div class="row p-1 my-3" style="border-radius: 10px; border-style: solid; border-color: #121212; border-width: 4px; background-color: #191919;">
   <div class="col d-flex align-items-center">
-    <img class="figure-img img-fluid mx-auto w-75" src="/content/images/CosmicKspDataFlow.png">
+    <img class="figure-img img-fluid mx-auto w-90" src="/content/images/CosmicKspDataFlow.png">
   </div>
 </div>
 
-## **Communication**
-KPS does not support external commanding or telemetry out of the box. To address this I use two mods provided by the KSP fan community.
+## **Game Instance Communication**
+KPS does not support external commanding or telemetry out of the box. To add this I use two mods provided by the KSP fan community.
 
 ### **KOS**
 The [Kerbal Operating System](https://ksp-kos.github.io/KOS/), KOS, mod enables running scripts "onboard" the spacecraft from either a built in terminal or remotely from a Telnet connection.
-The ability to run scripts also enables more complicated automated behavior than what can be sent in a single command. Such as:
+The ability to run onboard scripts also enables more complicated automated behavior than what can be sent in a single command. Such as:
 - automated abort conditions
 - PID control loops
 - precise maneuvers
-- modular behaviors
+- behaviors trees
 
 ### **Telemachus**
-The [Telemachus](https://github.com/TeleIO/Telemachus-1) mod provides a easy to use telemetry stream from KSP to a standard computer socket.
+The [Telemachus](https://github.com/TeleIO/Telemachus-1) mod provides a telemetry stream from KSP to a standard computer socket.
 The telemetry covers almost everything players would want to know about the state of the spacecraft. Including:
 - Position, Rotation and Orbit parameters
 - Resource levels
 - environment status
 
-## **Relays**
-While the above mods add a lot of needed interfaces, they are not directly compatible with Cosmos and need a translation layer.
+## **Translation Relay**
+While the above mods add a lot of needed interfaces, they are not directly compatible with COSMOS and need a translation layer.
 
-On the Telemetry side, Cosmos accepts fixed width strings to decode into data while Telemachus sends json formatted text.
-So a relay, written in Python, subscribes to the Telemachus stream, reformats the data into the format Cosmos needs, then sends it to a different socket for Cosmos to receive.
+On the Telemetry side, COSMOS accepts fixed width byte strings while Telemachus sends json formatted text.
+So a relay, written in Python, subscribes to the Telemachus stream, reformats the data into the format COSMOS needs, then sends it to a different socket for COSMOS to receive.
 
-On the commanding side, we have the same formatting problem but also KOS can only be commanded via telnet. So the commanding relay subscribes to the socket for Cosmos commands, reformats the commands and sends them to KSP via telnet.
+On the commanding side, we have the same formatting problem but KOS can only be commanded via telnet. So the commanding relay subscribes to the socket for COSMOS commands, reformats the commands and sends them to KSP via telnet.
 
-These two relays form the translation layer between Cosmos and KSP. They also include several injection points for testing and screening data flow.
+These two relay threads form the translation layer between COSMOS and KSP. They also include several injection points for testing and screening data flow.
 
-## **Simulation**
-This ground station supports screening and simulation functions, used for verification and planning. The simulation is just a second instance of KSP, set up to be initialized quickly from the states of the real KSP instance.
+## **COSMOS**
+[COSMOS](https://cosmosc2.com/) by Ball Aerospace is a command and control system providing commanding, scripting, and data visualization capabilities for embedded systems. COSMOS is intended for use during all phases of testing and during operations.
+COSMOS 5 is a cloud native build and comes in the form of a docker container. For this reason, COSMOS is actually running on a separate server machine I own, and is interfaced with over a browser.
 
-Initialization is done through save file manipulation. A quick-save file acts as a snapshot of the real KPS instance state and is copied onto the simulation KSP state and reloaded.
+## **Wrokflow and Instance Configurations**
+<div class="row p-1 my-3" style="border-radius: 10px; border-style: solid; border-color: #121212; border-width: 4px; background-color: #191919;">
+  <div class="col d-flex align-items-center">
+    <img class="figure-img img-fluid mx-auto w-90" src="/content/images/realSimflow.png">
+  </div>
+</div>
+In order to emulate real workflow and command center procedures, KSP can be launched under two different configurations: Simulation, and Real. COSMOS can switch between them as two different targets. These Targets can be used together to emulate a commanding, screening, or planning workflow.
+
+### **The Real Instance**
+This instance of KSP represents the reality of the spacecraft. It is interacted with as if there are no do overs.
+
+### **The Simulation Instance**
+This instance of KSP represents a simulation of reality. It has extra abilities to copy the game state from the real instance and is used to plan operations, or screen commands prior to execution on the real instance. This serves as a final check to make sure the command will function as expected.
 
 ## **Simulation Manager App**
-The Simulation Manager App, **SMA**, is the application that manages the simulation state and can send commands to it. It can initialize the sim from the real, and send commands to the sim using the cosmos format.
-
-The SMA is used during the real missions to screen commands prior to commanding the real spacecraft. This serves as a final check to make sure the command will function as expected.
-
-#### Features:
-- Manage the initialization of the *sim* from the *real* instance data.
-- Directly command the *sim* instance
-
-## **Mission Planning App**
-The Mission Planning App, **MPA**, is an app to construct sequences of commands and validate them using the simulation game instance. It creates a savable mission plan that can be
-
-#### Features:
-- Construct a list of commands in order of execution
-- Export the commands as a procedure document with instructions for the operator
-- All SMA functions
+The Simulation Manager App, **SMA**, is the application that manages the simulation state. It can initialize the sim from the real KSP state without closing either game.
+Initialization is done through save file manipulation. A quick-save file acts as a snapshot of the real KSP, is copied onto the simulation KSP, and reloaded.
