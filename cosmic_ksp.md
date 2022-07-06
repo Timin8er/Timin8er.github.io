@@ -26,7 +26,7 @@ A project to command the video game **[Kerbal Space Program](https://www.kerbals
 - Send commands to KSP spacecraft from COSMOS
 - Receive Telemetry from KSP in COSMOS
 - Initialize a *simulation* instance of KSP and screen commands before sending them to the *real* instance
-- Create a mission planning app for verifying commands in simulation prior to execution
+- Create a simulation manager app for verifying commands in simulation prior to execution
 
 <div class="row p-1 my-3" style="border-radius: 10px; border-style: solid; border-color: #121212; border-width: 4px; background-color: #191919;">
   <div class="col d-flex align-items-center">
@@ -42,17 +42,17 @@ KPS does not support external commanding or telemetry out of the box. To add thi
 ### **KOS**
 The [Kerbal Operating System](https://ksp-kos.github.io/KOS/), KOS, mod enables running scripts "onboard" the spacecraft from either a built in terminal or remotely from a Telnet connection.
 The ability to run onboard scripts also enables more complicated automated behavior than what can be sent in a single command. Such as:
-- automated abort conditions
+- Automated abort conditions
 - PID control loops
-- precise maneuvers
-- behaviors trees
+- Precise maneuvers
+- Behaviors trees
 
 ### **Telemachus**
 The [Telemachus](https://github.com/TeleIO/Telemachus-1) mod provides a telemetry stream from KSP to a standard computer socket.
 The telemetry covers almost everything players would want to know about the state of the spacecraft. Including:
 - Position, Rotation and Orbit parameters
 - Resource levels
-- environment status
+- Environment status
 
 ## **Translation Relay**
 While the above mods add a lot of needed interfaces, they are not directly compatible with COSMOS and need a translation layer.

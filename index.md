@@ -101,7 +101,8 @@ layout: page
             </div>
 
             <div class="col d-flex align-items-center ">
-              <img class="figure-img img-fluid mx-auto h-75" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png">
+              <!-- <img class="figure-img img-fluid mx-auto h-75" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png"> -->
+              <img class="figure-img img-fluid mx-auto h-75" src="/content/images/KSP.png">
             </div>
 
           </div>
@@ -120,7 +121,8 @@ layout: page
         </div>
 
         <div class="col-md-6 text-center">
-          <h1 class="display-3 pt-5"><a href="https://rebrand.ly/r1ckr0l13r">Blackjack Bot</a></h1>
+          <!-- <h1 class="display-3 pt-5"><a href="https://rebrand.ly/r1ckr0l13r">Blackjack Bot</a></h1> -->
+          <h1 class="display-3 pt-5">Blackjack Bot</h1>
           <h2 class="pb-5"><b>Neural Networks Playing Blackjack.</b></h2>
         </div>
         <!-- <div class="col-2 d-flex align-items-center">
