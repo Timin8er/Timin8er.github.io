@@ -90,7 +90,8 @@ layout: page
         </div>
 
         <div class="col-lg-2 d-none d-lg-flex align-items-center">
-          <a href="https://www.kerbalspaceprogram.com/"><img class="figure-img img-fluid mx-auto" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png"></a>
+          <!-- <a href="https://www.kerbalspaceprogram.com/"><img class="figure-img img-fluid mx-auto" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png"></a> -->
+          <a href="https://www.kerbalspaceprogram.com/"><img class="figure-img img-fluid mx-auto" src="/content/images/KSP.png"></a>
         </div>
 
         <div class="col-lg-6 d-flex d-lg-none">
