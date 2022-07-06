@@ -14,7 +14,8 @@ title: Cosmic KSP
   </div>
 
   <div class="col d-flex align-items-center ">
-    <img class="figure-img img-fluid mx-auto h-75" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png">
+    <!-- <img class="figure-img img-fluid mx-auto h-75" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png"> -->
+    <img class="figure-img img-fluid mx-auto h-75" src="/content/images/KSP.png">
   </div>
 
 </div>
