@@ -58,7 +58,7 @@ layout: page
 <div class="container-flex">
   <div class="row align-items-center p-3" id="INTRO" >
     <div class="col-lg-3 offset-lg-1 d-flex justify-content-center justify-content-lg-end">
-      <img src="/content/images/portfolioMain.jpg" class="rounded w-75 profile_image">
+      <img src="/content/images/TTP.png" class="rounded w-75 profile_image">
     </div>
 
     <div class="col-lg-4 text-center">
