@@ -10,7 +10,7 @@ title: Cosmic KSP
 <div class="row p-1 my-3" style="border-radius: 10px; border-style: solid; border-color: #121212; border-width: 4px; background-color: #191919;">
 
   <div class="col d-flex align-items-center">
-    <img class="figure-img img-fluid mx-auto w-75" src="https://cosmosc2.com/img/COSMOS.png">
+    <img class="figure-img img-fluid mx-auto w-75" src="https://ballaerospace.github.io/cosmos-website/img/COSMOS.png">
   </div>
 
   <div class="col d-flex align-items-center ">

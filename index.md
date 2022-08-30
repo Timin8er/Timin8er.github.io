@@ -81,7 +81,7 @@ layout: page
       <div class="row p-2">
 
         <div class="col-lg-2 offset-1 d-none d-lg-flex align-items-center">
-          <a href="https://cosmosc2.com/"><img class="figure-img img-fluid mx-auto" src="https://cosmosc2.com/img/COSMOS.png"></a>
+          <a href="https://ballaerospace.github.io/cosmos-website"><img class="figure-img img-fluid mx-auto" src="https://ballaerospace.github.io/cosmos-website/img/COSMOS.png"></a>
         </div>
 
         <div class="col-lg-6 text-center">
