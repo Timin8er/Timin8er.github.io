@@ -38,7 +38,7 @@ A project to command the video game **[Kerbal Space Program](https://www.kerbals
 ___
 
 ## **Game Instance Communication**
-KPS does not support external commanding or telemetry out of the box. To add this I use two mods provided by the KSP fan community.
+KSP does not support external commanding or telemetry out of the box. To add this I use two mods provided by the KSP fan community.
 
 ### **KOS**
 The [Kerbal Operating System](https://ksp-kos.github.io/KOS/), KOS, mod enables running scripts "onboard" the spacecraft from either a built in terminal or remotely from a Telnet connection.
@@ -58,12 +58,12 @@ The telemetry covers almost everything players would want to know about the stat
 ## **Translation Relay**
 While the above mods add a lot of needed interfaces, they are not directly compatible with COSMOS and need a translation layer.
 
-On the Telemetry side, COSMOS accepts fixed width byte strings while Telemachus sends json formatted text.
-So a relay, written in Python, subscribes to the Telemachus stream, reformats the data into the format COSMOS needs, then sends it to a different socket for COSMOS to receive.
+On the Telemetry side, COSMOS accepts fixed length byte strings while Telemachus sends json formatted text.
+So a relay, written in Python, subscribes to the Telemachus stream, reformats the data into the format COSMOS needs, then forwards it COSMOS to receive.
 
-On the commanding side, we have the same formatting problem but KOS can only be commanded via telnet. So the commanding relay subscribes to the socket for COSMOS commands, reformats the commands and sends them to KSP via telnet.
+On the commanding side, we have the same formatting problem but KOS can only be commanded via telnet. So the commanding relay subscribes to COSMOS commands, reformats the commands and sends them to KSP via telnet.
 
-These two relay threads form the translation layer between COSMOS and KSP. They also include several injection points for testing and screening data flow.
+These two relay processes form the translation layer between COSMOS and KSP.
 
 ## **COSMOS**
 [COSMOS](https://cosmosc2.com/) by Ball Aerospace is a command and control system providing commanding, scripting, and data visualization capabilities for embedded systems. COSMOS is intended for use during all phases of testing and during operations.
