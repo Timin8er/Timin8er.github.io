@@ -31,7 +31,7 @@ A project to command the video game **[Kerbal Space Program](https://www.kerbals
 
 <div class="row p-1 my-3" style="border-radius: 10px; border-style: solid; border-color: #121212; border-width: 4px; background-color: #191919;">
   <div class="col d-flex align-items-center">
-    <img class="figure-img img-fluid mx-auto w-90" src="/content/images/CosmicKspDataFlow.png">
+    <img class="figure-img img-fluid mx-auto w-90" src="/content/images/CosmicKspDataFlow2.png">
   </div>
 </div>
 
