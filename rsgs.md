@@ -28,10 +28,10 @@ A database centric approch to planning and commanding, the ROTK is a collection 
 ### **Achievements**
 - Wrote apps to receive telemetry, real time reporting, and initializing simulations
 - Created database centric apps for tracking data revisions
-- Wrote planning softweqre for creating executable operation procedures
+- Wrote planning software for creating executable operation procedures
 
 ### Key Technologies:
 - Python
 - C++
-- TCP Sockets
 - Docker
+- MySql

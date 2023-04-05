@@ -81,7 +81,9 @@ layout: page
       <div class="row p-2">
 
         <div class="col-lg-2 offset-1 d-none d-lg-flex align-items-center">
-          <a href="https://ballaerospace.github.io/cosmos-website"><img class="figure-img img-fluid mx-auto" src="https://ballaerospace.github.io/cosmos-website/img/COSMOS.png"></a>
+          <a href="https://ballaerospace.github.io/cosmos-website">
+            <img class="figure-img img-fluid mx-auto" src="https://ballaerospace.github.io/cosmos-website/img/COSMOS.png">
+          </a>
         </div>
 
         <div class="col-lg-6 text-center">
@@ -90,20 +92,24 @@ layout: page
         </div>
 
         <div class="col-lg-2 d-none d-lg-flex align-items-center">
-          <!-- <a href="https://www.kerbalspaceprogram.com/"><img class="figure-img img-fluid mx-auto" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png"></a> -->
-          <a href="https://www.kerbalspaceprogram.com/"><img class="figure-img img-fluid mx-auto" src="/content/images/KSP.png"></a>
+          <a href="https://www.kerbalspaceprogram.com/">
+            <img class="figure-img img-fluid mx-auto" src="/content/images/KSP.png">
+          </a>
         </div>
 
         <div class="col-lg-6 d-flex d-lg-none">
           <div class="row p-2">
 
             <div class="col d-flex align-items-center">
-              <img class="figure-img img-fluid mx-auto w-75" src="https://cosmosc2.com/img/COSMOS.png">
+              <a href="https://ballaerospace.github.io/cosmos-website">
+                <img class="figure-img img-fluid mx-auto w-75" src="https://ballaerospace.github.io/cosmos-website/img/COSMOS.png">
+              </a>
             </div>
 
             <div class="col d-flex align-items-center ">
-              <!-- <img class="figure-img img-fluid mx-auto h-75" src="https://www.kerbalspaceprogram.com/wp-content/uploads/2019/08/mercury-logo-white-new.png"> -->
-              <img class="figure-img img-fluid mx-auto h-75" src="/content/images/KSP.png">
+              <a href="https://www.kerbalspaceprogram.com/">
+                <img class="figure-img img-fluid mx-auto h-75" src="/content/images/KSP.png">
+              </a>
             </div>
 
           </div>
