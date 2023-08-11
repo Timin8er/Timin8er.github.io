@@ -99,7 +99,7 @@ layout: page
   <div class="row text-center m-3">
     <div id="OFR" class="project_card col-md-10 offset-md-1">
       <div class="row p-2">
-        <h1 class="display-3 pt-5"><a href="https://hub.docker.com/repository/docker/progradedv/open-feed-reader/general">Open Feed Reader</a></h1>
+        <h1 class="display-3 pt-5"><a href="https://hub.docker.com/r/progradedv/open-feed-reader">Open Feed Reader</a></h1>
         <h2 class="pb-5" style="color: black; text-shadow: 0 0 2px #fff;"><b>An open source, self hosted, RSS Feed Website.</b></h2>
       </div>
     </div>
