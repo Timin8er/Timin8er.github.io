@@ -21,7 +21,7 @@ title: Cosmic KSP
 </div>
 
 ## **Overview**
-A project to command the video game **[Kerbal Space Program](https://www.kerbalspaceprogram.com/)** using real ground station software, **[Cosmos](https://cosmosc2.com/)**.
+A project to command the video game **[Kerbal Space Program](https://www.kerbalspaceprogram.com/)** using real ground station software, **[Cosmos](https://openc3.com)**.
 
 ### Project Goals
 - Send commands to KSP spacecraft from COSMOS
@@ -66,7 +66,7 @@ On the commanding side, we have the same formatting problem but KOS can only be 
 These two relay processes form the translation layer between COSMOS and KSP.
 
 ## **COSMOS**
-[COSMOS](https://cosmosc2.com/) by Ball Aerospace is a command and control system providing commanding, scripting, and data visualization capabilities for embedded systems. COSMOS is intended for use during all phases of testing and during operations.
+[COSMOS](https://openc3.com) by Ball Aerospace (now called OpenC3) is a command and control system providing commanding, scripting, and data visualization capabilities for embedded systems. COSMOS is intended for use during all phases of testing and during operations.
 COSMOS 5 is a cloud native build and comes in the form of a docker container. For this reason, COSMOS is actually running on a separate server machine I own, and is interfaced with over a browser.
 
 ___
