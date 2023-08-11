@@ -11,6 +11,10 @@ layout: page
     color: #ffcc00;
   }
 
+  h1 {
+    text-shadow: 0 0 4px #000;
+  }
+
   .project_card {
     border-radius: 10px;
     border-style: solid;
@@ -41,13 +45,17 @@ layout: page
   }
 
   #COSMIC {
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-image: url(/jool.png);
   }
 
   #OFR {
     background-size: cover;
     background-position: 50% 42%;
     background-repeat: no-repeat;
-    background-image: url(https://wallpapercave.com/wp/wp3396924.jpg);
+    background-image: url(https://wallpapercave.com/wp/wp3396923.jpg);
     background-color: #fff;
     background-blend-mode: luminosity;
   }
@@ -81,42 +89,8 @@ layout: page
   <div class="row text-center m-3">
     <div id="COSMIC" class="project_card col-md-10 offset-md-1">
       <div class="row p-2">
-
-        <div class="col-lg-2 offset-1 d-none d-lg-flex align-items-center">
-          <a href="https://ballaerospace.github.io/cosmos-website">
-            <img class="figure-img img-fluid mx-auto" src="https://ballaerospace.github.io/cosmos-website/img/COSMOS.png">
-          </a>
-        </div>
-
-        <div class="col-lg-6 text-center">
-          <h1 class="display-3 pt-5"><a href="/cosmic_ksp">COSMIC KSP</a></h1>
-          <h2 class="pb-5"><b>Commanding KSP with COSMOS</b></h2>
-        </div>
-
-        <div class="col-lg-2 d-none d-lg-flex align-items-center">
-          <a href="https://www.kerbalspaceprogram.com/">
-            <img class="figure-img img-fluid mx-auto" src="/content/images/KSP.png">
-          </a>
-        </div>
-
-        <div class="col-lg-6 d-flex d-lg-none">
-          <div class="row p-2">
-
-            <div class="col d-flex align-items-center">
-              <a href="https://ballaerospace.github.io/cosmos-website">
-                <img class="figure-img img-fluid mx-auto w-75" src="https://ballaerospace.github.io/cosmos-website/img/COSMOS.png">
-              </a>
-            </div>
-
-            <div class="col d-flex align-items-center ">
-              <a href="https://www.kerbalspaceprogram.com/">
-                <img class="figure-img img-fluid mx-auto h-75" src="/content/images/KSP.png">
-              </a>
-            </div>
-
-          </div>
-        </div>
-
+        <h1 class="display-3 pt-5"><a href="/cosmic_ksp">Cosmic KSP</a></h1>
+        <h2 class="pb-5"><b>Commanding Kerbal Space Program with Cosmos</b></h2>
       </div>
     </div>
   </div>
@@ -126,7 +100,7 @@ layout: page
     <div id="OFR" class="project_card col-md-10 offset-md-1">
       <div class="row p-2">
         <h1 class="display-3 pt-5"><a href="https://hub.docker.com/repository/docker/progradedv/open-feed-reader/general">Open Feed Reader</a></h1>
-        <h2 class="pb-5"><b>An Open Source, self hosted RSS Feed Website.</b></h2>
+        <h2 class="pb-5" style="color: black; text-shadow: 0 0 2px #fff;"><b>An Open Source, self hosted RSS Feed Website.</b></h2>
       </div>
     </div>
   </div>
