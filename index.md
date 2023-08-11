@@ -55,7 +55,7 @@ layout: page
     background-size: cover;
     background-position: 50% 42%;
     background-repeat: no-repeat;
-    background-image: url(https://wallpapercave.com/wp/wp3396923.jpg);
+    background-image: url(https://wallpapercave.com/wp/wp3396917.jpg);
     background-color: #fff;
     background-blend-mode: luminosity;
   }
@@ -100,7 +100,7 @@ layout: page
     <div id="OFR" class="project_card col-md-10 offset-md-1">
       <div class="row p-2">
         <h1 class="display-3 pt-5"><a href="https://hub.docker.com/repository/docker/progradedv/open-feed-reader/general">Open Feed Reader</a></h1>
-        <h2 class="pb-5" style="color: black; text-shadow: 0 0 2px #fff;"><b>An Open Source, self hosted RSS Feed Website.</b></h2>
+        <h2 class="pb-5" style="color: black; text-shadow: 0 0 2px #fff;"><b>An open source, self hosted, RSS Feed Website.</b></h2>
       </div>
     </div>
   </div>
