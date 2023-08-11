@@ -46,7 +46,7 @@ layout: page
 
   #COSMIC {
     background-size: cover;
-    background-position: 50% 100%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-image: url(/jool.png);
   }
