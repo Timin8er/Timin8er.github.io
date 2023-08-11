@@ -48,6 +48,8 @@ layout: page
     background-position: 50% 42%;
     background-repeat: no-repeat;
     background-image: url(https://wallpapercave.com/wp/wp3396924.jpg);
+    background-color: #fff;
+    background-blend-mode: luminosity;
   }
 
   #VEX {
