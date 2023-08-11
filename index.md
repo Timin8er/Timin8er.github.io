@@ -89,13 +89,13 @@ layout: page
   <div class="row text-center m-3">
     <div id="COSMIC" class="project_card col-md-10 offset-md-1">
       <div class="row p-2">
-        <h1 class="display-3 pt-5"><a href="/cosmic_ksp">Cosmic KSP</a></h1>
+        <h1 class="display-3 pt-5"><a href="/content/images/cosmic_ksp">Cosmic KSP</a></h1>
         <h2 class="pb-5"><b>Commanding Kerbal Space Program with Cosmos</b></h2>
       </div>
     </div>
   </div>
 
-  <!-- Blackjack Bot Project Card -->
+  <!-- Open Feed Reader Project Card -->
   <div class="row text-center m-3">
     <div id="OFR" class="project_card col-md-10 offset-md-1">
       <div class="row p-2">
