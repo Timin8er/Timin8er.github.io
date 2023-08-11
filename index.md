@@ -43,11 +43,11 @@ layout: page
   #COSMIC {
   }
 
-  #CARDSTRIP {
+  #OFR {
+    background-size: cover;
+    background-position: 50% 42%;
     background-repeat: no-repeat;
-    background-position: 22% 100%;
-    background-attachment: fixed;
-    background-image: url(/content/images/cardStrip.png); */
+    background-image: url(https://wallpapercave.com/wp/wp3396924.jpg);
   }
 
   #VEX {
@@ -121,20 +121,10 @@ layout: page
 
   <!-- Blackjack Bot Project Card -->
   <div class="row text-center m-3">
-    <div class="project_card col-md-10 offset-md-1">
+    <div id="OFR" class="project_card col-md-10 offset-md-1">
       <div class="row p-2">
-
-        <div id="CARDSTRIP" class="col-2 offset-1 d-none d-md-flex align-items-center">
-        </div>
-
-        <div class="col-md-6 text-center">
-          <!-- <h1 class="display-3 pt-5"><a href="https://rebrand.ly/r1ckr0l13r">Blackjack Bot</a></h1> -->
-          <h1 class="display-3 pt-5">Blackjack Bot</h1>
-          <h2 class="pb-5"><b>Neural Networks Playing Blackjack.</b></h2>
-        </div>
-        <!-- <div class="col-2 d-flex align-items-center">
-          <img class="figure-img img-fluid mx-auto" src="/content/images/blackjackBotScreenshot_abridged.PNG" alt="Sim Abridged">
-        </div> -->
+        <h1 class="display-3 pt-5"><a href="https://hub.docker.com/repository/docker/progradedv/open-feed-reader/general">Open Feed Reader</a></h1>
+        <h2 class="pb-5"><b>An Open Source, self hosted RSS Feed Website.</b></h2>
       </div>
     </div>
   </div>
