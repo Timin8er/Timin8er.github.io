@@ -11,7 +11,7 @@ layout: page
     color: #ffcc00;
   }
 
-  h1 h2 {
+  h1, h2 {
     text-shadow: 0 0 4px #000;
   }
 
