@@ -5,8 +5,8 @@ from progressbar import progressbar
 CMD = "ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0".split()
 
 library_dirs = [
-        "/mnt/md0/media/Movies",
-        "/mnt/md0/media/TV Shows",
+        "/mnt/media/Movies",
+        "/mnt/media/Shows",
         ]
 
 destination = os.path.join(os.path.dirname(__file__), 'media.txt')
