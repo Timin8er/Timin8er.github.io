@@ -46,6 +46,10 @@ layout: page
   .wrf-bg::before {
     content: "";
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
     z-index: -1; /* Pushes the image behind your text */
 
     background-size: cover;
@@ -53,7 +57,7 @@ layout: page
     background-position: center;
 
     /* Rotation and Scaling */
-    transform: rotate(15deg);
+    transform: rotate(15deg) scale(1.5);
   }
 
   #RSGS {
