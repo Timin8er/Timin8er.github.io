@@ -37,6 +37,28 @@ layout: page
     border-color: var(--main-boarder);
   }
 
+  .wrh-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .wrh-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Pushes the image behind your text */
+
+    background-size: cover;
+    background-image: url(/content/images/Screenshot_20260820_182426.png);
+    background-position: center;
+
+    /* Rotation and Scaling */
+    transform: rotate(15deg) scale(1.3);
+  }
+
   #RSGS {
     background-size: cover;
     background-position: 50% 42%;
@@ -64,7 +86,6 @@ layout: page
   }
 </style>
 
-
 <div class="container-flex">
   <div class="row align-items-center p-3" id="INTRO" >
     <div class="col-lg-3 offset-lg-1 d-flex justify-content-center justify-content-lg-end">
@@ -74,6 +95,14 @@ layout: page
     <div class="col-lg-4 text-center">
       <h1 class="display-1">Tim Polnow</h1>
       <h1 class="display-3">Software Engineer</h1>
+    </div>
+  </div>
+
+  <!-- RSGS Project Card -->
+  <div class="row text-center m-3">
+    <div id="WRH" class="project_card col-md-10 offset-md-1 wrh-bg">
+      <h1 class="display-3 pt-5"><a href="https://www.warframerelic.farm">RSGS</a></h1>
+      <h2 class="pb-5"><b>Warframe Relic Harvest</b></h2>
     </div>
   </div>
 
