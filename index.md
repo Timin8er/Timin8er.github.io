@@ -46,10 +46,6 @@ layout: page
   .wrf-bg::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     z-index: -1; /* Pushes the image behind your text */
 
     background-size: cover;
@@ -57,7 +53,7 @@ layout: page
     background-position: center;
 
     /* Rotation and Scaling */
-    transform: rotate(15deg) scale(1.3);
+    transform: rotate(15deg);
   }
 
   #RSGS {
@@ -101,7 +97,7 @@ layout: page
 
   <!-- WRF Project Card -->
   <div class="row text-center m-3">
-    <div id="WRH" class="project_card col-md-10 offset-md-1 wrf-bg">
+    <div id="WRH" class="wrf-bg project_card col-md-10 offset-md-1">
       <h1 class="display-3 pt-5"><a href="https://www.warframerelic.farm">Warframe Relic Farm</a></h1>
       <h2 class="pb-5"><b>Equipment Farming Planner for the MMO Warframe</b></h2>
     </div>
