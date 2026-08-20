@@ -37,12 +37,13 @@ layout: page
     border-color: var(--main-boarder);
   }
 
-  .wrh-bg {
+  .wrf-bg {
     position: relative;
     overflow: hidden;
+    background-color: ;
   }
 
-  .wrh-bg::before {
+  .wrf-bg::before {
     content: "";
     position: absolute;
     top: 0;
@@ -98,11 +99,11 @@ layout: page
     </div>
   </div>
 
-  <!-- RSGS Project Card -->
+  <!-- WRF Project Card -->
   <div class="row text-center m-3">
-    <div id="WRH" class="project_card col-md-10 offset-md-1 wrh-bg">
-      <h1 class="display-3 pt-5"><a href="https://www.warframerelic.farm">RSGS</a></h1>
-      <h2 class="pb-5"><b>Warframe Relic Harvest</b></h2>
+    <div id="WRH" class="project_card col-md-10 offset-md-1 wrf-bg">
+      <h1 class="display-3 pt-5"><a href="https://www.warframerelic.farm">Warframe Relic Farm</a></h1>
+      <h2 class="pb-5"><b>Equipment Farming Planner for the MMO Warframe</b></h2>
     </div>
   </div>
 
