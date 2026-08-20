@@ -40,13 +40,13 @@ layout: page
   .wrf-bg {
     position: relative;
     overflow: hidden;
-    background-color: ;
+    background-color: transparent !important;
   }
 
   .wrf-bg::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -50%;
     left: 0;
     width: 100%;
     height: 200%;
