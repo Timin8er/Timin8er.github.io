@@ -46,7 +46,7 @@ layout: page
   .wrf-bg::before {
     content: "";
     position: absolute;
-    top: -50%;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 200%;
